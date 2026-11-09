@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Morgan | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Alex Morgan, full-stack developer and UI designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll progress indicator -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Main">
+      <a href="#home" class="logo">alex<span>.dev</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark mode">🌙</button>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hello">Hi, I'm</p>
+          <h1>Alex Morgan</h1>
+          <p class="roles">I'm a <span id="typing" class="typing"></span><span class="cursor">|</span></p>
+          <p class="intro">I design and build fast, accessible web apps. From first sketch to deployed product, I care about clean code and interfaces people enjoy using.</p>
+          <div class="btn-row">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Replace the src with your own photo, e.g. images/me.jpg -->
+          <img alt="Portrait of Alex Morgan" width="360" height="360"
+            src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23232a52'/%3E%3Ccircle cx='100' cy='78' r='36' fill='%238e9bff'/%3E%3Cpath d='M30 200c0-44 31-70 70-70s70 26 70 70z' fill='%238e9bff'/%3E%3C/svg%3E">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About me</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>I'm a full-stack developer based in Hyderabad with 5+ years of experience shipping products for startups and small businesses. I enjoy turning messy requirements into simple, dependable software.</p>
+            <p>Away from the keyboard you'll find me sketching interfaces, reading about typography, or hiking with a camera.</p>
+            <ul class="stats">
+              <li><strong data-count="5">0</strong><span>Years of experience</span></li>
+              <li><strong data-count="40">0</strong><span>Projects delivered</span></li>
+              <li><strong data-count="25">0</strong><span>Happy clients</span></li>
+            </ul>
+          </div>
+          <div class="summary reveal">
+            <h3>Professional summary</h3>
+            <p>Frontend specialist with strong backend fundamentals. I lead small teams, mentor junior developers, and keep performance and accessibility in every build.</p>
+            <div class="tags">
+              <span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>UI design</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="grid skills-grid">
+          <article class="card skill reveal"><div class="icon">🎨</div><h3>HTML &amp; CSS</h3>
+            <div class="bar"><div class="fill" data-level="95"></div></div><span class="pct">95%</span></article>
+          <article class="card skill reveal"><div class="icon">⚡</div><h3>JavaScript</h3>
+            <div class="bar"><div class="fill" data-level="90"></div></div><span class="pct">90%</span></article>
+          <article class="card skill reveal"><div class="icon">⚛️</div><h3>React</h3>
+            <div class="bar"><div class="fill" data-level="85"></div></div><span class="pct">85%</span></article>
+          <article class="card skill reveal"><div class="icon">🛠️</div><h3>Node.js</h3>
+            <div class="bar"><div class="fill" data-level="78"></div></div><span class="pct">78%</span></article>
+          <article class="card skill reveal"><div class="icon">🗄️</div><h3>Databases</h3>
+            <div class="bar"><div class="fill" data-level="72"></div></div><span class="pct">72%</span></article>
+          <article class="card skill reveal"><div class="icon">✏️</div><h3>UI / UX design</h3>
+            <div class="bar"><div class="fill" data-level="80"></div></div><span class="pct">80%</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web apps</button>
+          <button class="filter" data-filter="ui">UI design</button>
+          <button class="filter" data-filter="api">APIs</button>
+        </div>
+        <div class="grid projects-grid" id="projectGrid">
+          <article class="card project" data-category="web">
+            <div class="thumb g1">🛒</div>
+            <div class="body"><h3>Shopfront</h3>
+              <p>A lightweight e-commerce storefront with cart, search, and checkout flow.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="btn-row"><a href="#" class="btn btn-primary sm">Live Demo</a><a href="#" class="btn btn-outline sm">GitHub</a></div></div>
+          </article>
+          <article class="card project" data-category="ui">
+            <div class="thumb g2">📱</div>
+            <div class="body"><h3>FitTrack app design</h3>
+              <p>Mobile UI kit and prototype for a workout tracker, tested with 12 users.</p>
+              <div class="tags"><span>Figma</span><span>Prototyping</span></div>
+              <div class="btn-row"><a href="#" class="btn btn-primary sm">Live Demo</a><a href="#" class="btn btn-outline sm">GitHub</a></div></div>
+          </article>
+          <article class="card project" data-category="api">
+            <div class="thumb g3">🔌</div>
+            <div class="body"><h3>Booking API</h3>
+              <p>REST API handling availability, reservations, and email reminders.</p>
+              <div class="tags"><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
+              <div class="btn-row"><a href="#" class="btn btn-primary sm">Live Demo</a><a href="#" class="btn btn-outline sm">GitHub</a></div></div>
+          </article>
+          <article class="card project" data-category="web">
+            <div class="thumb g4">📊</div>
+            <div class="body"><h3>Analytics dashboard</h3>
+              <p>Responsive dashboard with charts, filters, and exportable reports.</p>
+              <div class="tags"><span>React</span><span>Charts</span></div>
+              <div class="btn-row"><a href="#" class="btn btn-primary sm">Live Demo</a><a href="#" class="btn btn-outline sm">GitHub</a></div></div>
+          </article>
+          <article class="card project" data-category="ui">
+            <div class="thumb g5">🎧</div>
+            <div class="body"><h3>Podcast landing page</h3>
+              <p>Marketing site design with an embedded player and episode archive.</p>
+              <div class="tags"><span>UI</span><span>CSS</span></div>
+              <div class="btn-row"><a href="#" class="btn btn-primary sm">Live Demo</a><a href="#" class="btn btn-outline sm">GitHub</a></div></div>
+          </article>
+          <article class="card project" data-category="api">
+            <div class="thumb g6">🔐</div>
+            <div class="body"><h3>Auth service</h3>
+              <p>Token-based login service with refresh tokens and rate limiting.</p>
+              <div class="tags"><span>Node.js</span><span>JWT</span></div>
+              <div class="btn-row"><a href="#" class="btn btn-primary sm">Live Demo</a><a href="#" class="btn btn-outline sm">GitHub</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE / EDUCATION ============ -->
+    <section class="section alt" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal">Experience &amp; education</h2>
+        <div class="timeline">
+          <div class="t-item reveal"><span class="t-date">2023 – Present</span><h3>Senior Frontend Developer</h3><p class="t-sub">Brightwave Labs</p><p>Lead a team of four building a SaaS analytics platform. Cut page load time by 45%.</p></div>
+          <div class="t-item reveal"><span class="t-date">2021 – 2023</span><h3>Full-Stack Developer</h3><p class="t-sub">Pixel &amp; Co.</p><p>Built client websites and internal tools with React and Node.js.</p></div>
+          <div class="t-item reveal"><span class="t-date">2019 – 2021</span><h3>Junior Web Developer</h3><p class="t-sub">Startup Studio</p><p>Delivered responsive landing pages and maintained REST APIs.</p></div>
+          <div class="t-item reveal"><span class="t-date">2015 – 2019</span><h3>B.Tech, Computer Science</h3><p class="t-sub">Your University</p><p>Graduated with distinction. Focus on software engineering and human-computer interaction.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <h2 class="section-title reveal">Services</h2>
+        <div class="grid services-grid">
+          <article class="glass reveal"><div class="icon">💻</div><h3>Web development</h3><p>Fast, responsive websites and web apps built to your spec.</p></article>
+          <article class="glass reveal"><div class="icon">🎯</div><h3>UI / UX design</h3><p>Wireframes, prototypes, and polished interfaces.</p></article>
+          <article class="glass reveal"><div class="icon">🔧</div><h3>API development</h3><p>Secure, documented backends that scale with your product.</p></article>
+          <article class="glass reveal"><div class="icon">🚀</div><h3>Performance tuning</h3><p>Audits and fixes for speed, accessibility, and SEO.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid">
+          <div class="reveal">
+            <p>Have a project in mind? Send a message and I'll reply within two working days.</p>
+            <ul class="info">
+              <li>📧 <a href="mailto:hello@alexmorgan.dev">hello@alexmorgan.dev</a></li>
+              <li>📞 <a href="tel:+910000000000">+91 00000 00000</a></li>
+              <li>📍 Hyderabad, India</li>
+            </ul>
+            <div class="socials">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+          <form id="contactForm" class="form reveal" novalidate>
+            <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name"><small class="error"></small></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><small class="error"></small></div>
+            <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text"><small class="error"></small></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><small class="error"></small></div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Alex Morgan. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
